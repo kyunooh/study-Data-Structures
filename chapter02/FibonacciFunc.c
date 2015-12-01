@@ -2,6 +2,8 @@
 
 int Fibo(int n)
 {
+  printf("func call param %d \n", n);
+    
   if(n == 1)
     return 0;
   else if(n == 2)
@@ -12,10 +14,7 @@ int Fibo(int n)
 
 int main(void)
 {
-  int i;
-  for(i=1; i<15; i++)
-    printf("%d ", Fibo(i));
-
+  Fibo(7);
   return 0;
 }
   
